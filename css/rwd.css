@@ -1,0 +1,126 @@
+@media only screen and (max-width: 600px){
+
+    /*index*/
+    body{background-position: center; overflow-x: hidden; margin: 0;}
+    .logo{left: -7%;transform: scale(0.7);}
+    .access_buttons{right: 10px;}
+    .google_button{transform: scale(.8);left: -16px; top: -6px; height: 37px; width: 37px;}
+    .header{ z-index: 11;}
+    .header_content{font-size: 18px; width: 100%;}
+    .start_project{font-size: 18px;}
+    .flowplanScrum{width: 100%;height: auto;}
+    .Counts_ofAll{height:285px;font-size:10px;}
+    .overall{width: 20%;font-size: 11px;}
+    .whatScrum{font-size:9px}
+    .whatScrumPharagraph{width: 80%;font-size: 13px; position: unset;line-height: 23px; padding-left: unset; margin-left: unset; border-left: unset;}
+    .researchers_aboutUs{text-align: justify; width: 90%;}
+    .reseachers_picture img{width: 100%;}
+    .body_content{width: 90%;left: 0; top: 0;}
+    footer{padding-bottom: 20px;}
+
+    /*template*/
+    .access_buttons_rwd{right: 5%; transform: scale(0.6);}
+    .template_content{right: -10px;
+        width: 316px; 
+        padding-bottom: unset;
+        border-bottom: unset;
+        margin-bottom: unset;
+    }
+    .My_ActivityList{width: 100%;}
+    .projects_list-right, .projects_list-left{position: unset;margin-left: 10px;}
+
+
+    /*summary and dashboard*/
+    .window, .window2{transform: scale(.9);top: 5%; width: 100% !important;}
+    .menu_content{width: 100%;height: 82px; text-align: left; z-index: 10;}
+    .menu_content .head_menu{border-bottom: unset; margin-bottom: unset; display: block; width: 100px; bottom: 20px;}
+    .head_menu h2{width: 100px;}
+    .menu_content div{
+        padding: 10px;
+        display: inline-block;
+        font-size: 10px;
+        position: relative;
+        bottom: 29px;
+    }
+    .product_tblHeader{position: unset;width: unset;}
+    #myObjective, #myStory{width: 32%; font-size: 14px;border-radius: 3px;}
+    .create_btn{bottom: 1.5px; padding: 1px;}
+    .mob_rws{display: none;}
+
+    .openProject{padding: 3px;width: 100px;}
+    .New_project{display: none;}
+    .menu_content .help_menu{display: none;}
+    .dashboard_content{margin-left: unset; margin-top: 185px;}
+    .summary_content, .product_content, .sprint_content, .board_content
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sum_done, .sum_update, .sum_created, .sum_due
+    {width: 150px;font-size: 13px;}
+    .sum_overview, .sum_priority
+    {width: 88%;}
+    .sum_members{width: 88%;}
+    .New_project{right: 14px;top: 17px;}
+    .btn_logout{
+        font-size: 10px;
+        bottom: unset;
+        left: unset;
+        right: 3px;
+        top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;}
+
+    /*product*/
+    .product_holder{width: 100%;overflow-x: auto;}
+    .product_table{width: 97%;}
+    .t_entity, .h_entity, .t_prio, .h_prio, .t_status, .h_status{display: none !important;}
+    .t_story, .h_story, .t_obj, .h_obj{width: 39%;}
+    .t_sprint, .h_sprint{width: 20%;}
+    .h_sprint, .h_story, .h_obj{font-size: 12px;}
+    .product_tblData2 .create_story{width: 100%;}
+    .create_story input{width: 45%;}
+
+    /*sprint*/
+    .sprint_num{width: 120px;height: 120px;}
+    .sprint_name, .sprint_week{font-size: 13px;top: 56px;}
+    .sprint_week{top: 104px;}
+
+    .useStory{width: 90%;}
+    .btnbackSprint, .backSprint{font-size: 12px; margin-bottom: 21px;}
+    .setSprintDue{width: 35px;}
+
+    .dateTimeTrack{display: block;}
+    .dashboard_content div h4, div .h2_sum {font-size: 18px;}
+
+    /*scrumboard*/
+    .board_holder{
+        transform: scale(.5);
+        width: 190%;
+        overflow-x: auto;
+        height: 1000px;
+        top: -248px;
+        left: -168px;
+    }
+    .sprint_board{z-index: 3;}
+    .sprint_board .sprintBoard{font-size: 14px;}
+    .boardTask, .boardToDO, .boardProgress, .boardDone{top: 50px;}
+    .boardMembers, .fileter_sprints{top: 95px;left: 10px;}
+    .fileter_sprints{left: 150px;}
+    .boardMembers, .fileter_sprints, .OpenMember {position: unset;}
+    .filter_member, .filterSprint, .OpenMember{width: 75px;font-size: 11px;}
+    .filter_dropdown, .sprint_board{top: 82px;transform: scale(0.6);left: 110px;z-index: 5;}
+    .sprint_board{left: 35px;}
+
+    /*repairs*/
+    .product_filters, .product_filter_select{font-size: 9px;}
+    .del_proj, .acc_proj, .rename_proj{top: 32px; right: 15px;}
+    .acc_proj, .rename_proj{right: 70px;top: 32px;}
+    .proj_name{height: 60px;}
+    .projects_list{width: 354px;}
+    .update_logs_container, .finished_task_container, .created_taskk_container{width: 96%;}
+    .iWantTo, .soThat{width: 90%;}
+    .product_window{font-size: 12px;}
+    .g_sign{font-size:11px; display: none;}
+    
+}

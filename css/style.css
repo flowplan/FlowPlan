@@ -1,0 +1,363 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    cursor: context-menu;
+    background-image: url(team.png);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position:top center;
+    background-size: initial;
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+table, tr, th, td
+{
+    /*border: 1px black solid;*/
+    border-collapse: collapse;
+}
+
+button
+{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 2px white solid;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 7px;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    position: relative;
+}
+
+input
+{
+    border: none;
+    border-bottom: 2px #333 solid;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+input::selection
+{
+    color: white;
+    background-color: #333;
+}
+
+.inputs
+{
+    margin-bottom: 14px;
+}
+
+.header
+{
+    background-color: #353535;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.logo, .access_buttons
+{
+    position: absolute;
+    bottom: 20px;
+}
+
+.logo_img
+{
+    width: 240px;
+    height: auto;
+    position: relative;
+    /*top: 13px;*/
+}
+
+.main_title
+{
+    /*display: inline;*/
+    margin: 0;
+}
+
+.logo-toBody .logo_img
+{
+    width: 300px;
+    height: auto;
+}
+
+.logo
+{
+    left: 100px;
+    bottom: 7px;
+    /*border: 1px white solid;*/
+}
+
+.access_buttons
+{
+    right: 100px;
+}
+
+button:hover
+{
+    background-color: blue;
+}
+
+.start_project
+{
+    font-size: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.body_content
+{
+    position: relative;
+    top: 10px;
+    /*border: 1px #333 solid;*/
+    width: 385px;
+    left: 43px;
+    padding: 10px;
+    border-radius: 10px;
+    /*background-color: rgba(51, 51, 51, 0.5);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.8);*/
+}
+
+.black, .black2
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(black.png);
+    width: 100%;
+    height: 100%;
+    z-index: 32;
+}
+
+.outerclose
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.window, .window2
+{
+    position: relative;
+    top: 100px;
+    width: 450px;
+    background-color: #eee;
+    border-radius: 5px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 3;
+}
+
+.google_button
+{
+    position: absolute;
+    left: -30px;
+    top: -8px;
+    height: 50px;
+    width: 50px;
+}
+
+.opt
+{
+    color: #333;
+    font-weight: bold;
+}
+
+.g_sign
+{
+    /*padding-left: 30px;*/
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.g_sign:hover
+{
+    background-color: transparent;
+    color: blue;
+}
+
+.close_button
+{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header_content
+{
+    font-size: 24px;
+}
+
+.iWantTo, .soThat{
+    resize: none;
+    width: 400px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.asA
+{
+    background-color: white;
+    border: 1px black solid;
+    font-size: 16px;
+    width: 120px;
+    padding-left: 10px;
+}
+
+.btn-save-story{
+    width: 70px;
+    border-radius: 3px;
+    background-color: #333;
+}
+
+.t_story, .t_obj,
+.T_sprint_task, .T_sprint_done,
+.task_data
+{
+    word-wrap: break-word;
+}
+
+.Counts_ofAll
+{
+    margin-top: 120px;
+    color: black;
+    background-color: #eee;
+    width: 100%;
+    height: 330px;
+    padding-top: 30px;
+}
+
+.researchers
+{
+    color: black;
+    background-color: #eee;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.whatScrum
+{    
+    color: white;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flowplanScrum
+{
+    width: 780px;
+    height: 370px;
+}
+
+.whatScrumPharagraph{  
+    display: inline-block;
+    width: 470px;
+    /*border: 1px white solid;*/
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 23px;
+    position: relative;
+    bottom: 128px;
+    padding-left: 20px;
+    border-left: 1px rgb(83, 83, 83) solid;
+    line-height: 30px;
+}
+
+.overall
+{
+    width: 160px;
+    /* border: 1px black solid; */
+    border-radius: 14px;
+    padding: 12px;
+    background: white;
+    box-shadow: 2px 2px 2px grey;
+    display: inline-block;
+    margin: 10px;
+}
+
+footer{
+    padding-top: 30px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(134, 134, 134);
+}
+
+.researchers_info{
+    /*border: 1px black solid;*/
+    width: 260px;
+    height: 260px;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 14px;
+    padding: 12px;
+    background: white;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.researchers_picture{
+    /*border: 1px black solid;*/
+    overflow: hidden;
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.researchers_aboutUs{
+    width: 70%;
+}
+
+.touch{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: 30px #333 solid;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+    transform: scale(0.5);
+    margin: -18px;
+}
+
+.product_holder{
+    width: 96%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 55vh;
+    /*border: 1px white solid;*/
+    /*box-shadow: 2px 2px 2px black;*/
+    /*background-color: #333;*/
+}
+
+.create_btn
+{
+    border-radius: 3px;
+    border: 2px white solid;
+    padding: 6px;
+    bottom: 4.5px;
+}

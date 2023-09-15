@@ -1,0 +1,329 @@
+/*NOTE: this layout is the purpose for me
+        to learn how to create a Kanban */
+.board_holder
+{
+    width: 1000px;
+    position: relative;
+    /*border: 1px white solid;*/
+    top: -26px;
+}
+
+.boardTask, .boardToDO, .boardProgress, .boardDone,
+.backBoard1, .backBoard2, .backBoard3, .backBoard4
+{
+    position: absolute;
+    /*display: inline-block;*/
+    /*border: 1px white solid;*/
+    width: 240px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    min-height: 550px;
+    top: 50px;
+    z-index: 1;
+    
+}
+
+.backBoard1, .backBoard2, .backBoard3, .backBoard4
+{
+    z-index: -1;
+    /*background-color: rgba(238, 238, 238, 0.542);*/
+    background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.542), rgba(238, 238, 238, 0))
+}
+
+.board_holder .boardTask, .backBoard1
+{
+    left: 0;
+    z-index: 4;
+}
+
+.board_holder .boardToDO, .backBoard2
+{
+    left: 250px;
+    z-index: 3;
+}
+
+.board_holder .boardProgress, .backBoard3
+{
+    left: 500px;
+    z-index: 2;
+}
+
+.board_holder .boardDone, .backBoard4
+{
+    left: 750px;
+}
+
+.head_board
+{
+    background-color: #333;
+    width: 100%;
+    margin-left: unset;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*.Container
+{
+    width: unset;
+    height: unset;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    min-height: unset;
+    box-shadow: unset;
+    position: unset;
+    top: unset;
+    left: unset;
+    display: unset;
+    margin: 0;
+}*/
+
+.task_data, .task_data_done
+{
+    border: 1px #eee solid;
+    width: 180px !important;
+    height: 130px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 23px;
+    font-size: 12px;
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 2px 3px black;
+    font-weight: bold;
+    cursor:context-menu;
+    -webkit-transition: margin-bottom .5s;
+    transition: margin-bottom .5s;
+}
+
+.task_data:hover{
+    cursor:move;
+}
+
+.storyInBoard{
+    color:navy;
+    font-size:12px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+
+.storyInBoard:hover{color:#333}
+
+.member1,
+.member2,
+.member3,
+.member4
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.task_owner, .TaskStatus
+{
+    cursor: pointer;
+    text-align: center;
+    width: 40%;
+    height: unset;
+    height: 12px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 0;
+    margin: 0;
+    background-color: dimgray;
+    color: rgb(213, 213, 213);
+    font-size: 12px;
+    border: 1px black solid;
+    /*border: unset;*/
+    border-radius: 2px;
+    padding: 2px;
+    padding-bottom: 3px;
+}
+
+.task_owner
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.TaskStatus
+{
+    right: unset;
+    left: 15px;
+    bottom: 5px;
+}
+
+.commentIndicator
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 0, 0, 1);
+    text-align: center;
+    color: white;
+    border-radius: 19px;
+    /*border: 1px #eee solid;
+    animation-name: comment;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;*/
+}
+/*
+@keyframes comment {
+    0% {background: rgba(255, 0, 0, 1);}
+    50% {background: rgba(255, 0, 0, 0);}
+    100% {background: rgba(255, 0, 0, 1);}
+}*/
+
+.task_owner:hover
+{
+    background-color: #333;
+    color: white;
+}
+
+.member1
+{
+    background-color: red;
+}
+
+.member2
+{
+    background-color: magenta;
+}
+
+.member3
+{
+    background-color: blue;
+}
+
+.member4
+{
+    background-color: green;
+}
+
+.task_Container, .ToDo_Container, .Progress_Container, .Done_Container
+{
+ /*   border: 1px black solid;*/
+    min-height: 400px;
+    padding-bottom: 150px;
+}
+
+.changeStatus, .changeOwner{
+    position: absolute;
+    top: 137px;
+    left: 14px;
+    background-color: #eee;
+    z-index: 1;
+    padding: 3px;
+    border: 1px black solid;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.changeOwner{
+    left: 118px
+}
+
+.TaskStatus:hover{
+    background-color: #333;
+    color: white;
+}
+
+.actionTask:hover,
+.actionToDo:hover,
+.actionProgress:hover,
+.actionDone:hover,
+.AssignedMember:hover{
+    color:#eee;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.sprintBoard{
+    margin: 2px;
+    width: 117px;
+}
+
+.sprintBoard:hover{
+    color: white;
+    background-color: #333;
+}
+
+.boardMembers, .fileter_sprints, .OpenMember{
+    position: relative;
+    display: inline-block;
+    /*left: 14px;
+    top: 97px;*/
+    z-index: 6;
+    text-align: left;
+}
+/*
+.fileter_sprints{
+    left: 150px;
+}
+
+.OpenMember{
+    left: 300px;
+}
+*/
+.filter_member, .filterSprint, .OpenMember{
+    border: 1px black solid;
+    background-color: white;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 2px;
+    width: 115px;
+    cursor: pointer;
+}
+
+.filter_member{
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    top: 8px;
+    text-overflow: ellipsis;
+}
+
+.filter_member:hover, .filterSprint:hover, .OpenMember:hover{
+    color: white;
+    background-color: #333;
+}
+
+.fileter_select_member:first-child
+{
+    color: black;
+}
+
+.filter_dropdown, .sprint_board
+{
+    border: 1px black solid;
+    position: absolute;
+    top: 30px;
+}
+
+.fileter_select_member
+{
+    color: #eee;
+    font-weight: bold;
+    padding: 4px;
+    width: 170px;
+}
+
+.sprint_board
+{
+    /*position: relative;*/
+    background-color: white;
+}
